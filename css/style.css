@@ -23,6 +23,8 @@ header {
 .logo {
     font-weight: 500;
     font-size: 1.3rem;
+    text-decoration: none;
+    color: #343434;
 }
 
 .logo-container, .nav-links {
@@ -160,7 +162,7 @@ footer {
     padding: 12px 20px 14px 20px;
     border-radius: 6px;
     align-items: center;
-    margin: 4vh;
+    margin-top: 4vh;
 }
 
 /* .email-text {
@@ -207,8 +209,11 @@ input:focus {
     outline: none;
 }
 
-.copy-icon:hover {
-    opacity: 1;
+.copied {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1DA563;
+    margin: 1vh 0 4vh 0;
 }
 
 .social-media {

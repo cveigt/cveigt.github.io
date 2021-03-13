@@ -9,17 +9,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Christian Veigt - Product Design and Design Systems</title>
   </head>
 
   <body>
     <header>
       <div class="logo-container">
-        <h4 class="logo">christian veigt</h4>
+        <a href="#" class="logo">christian veigt</a>
       </div>
         <nav>
           <ul class="nav-links">
-            <li><a href="#" class="nav-link">Contact</a></li>
+            <li><a href="#copy" class="nav-link">Contact</a></li>
           </ul>
         </nav>
     </header>
@@ -37,25 +38,37 @@
       <section class="cards">
         <a href="#" class="card">
           <h3 class="card-title">XML SuperDebugger</h3>
-          <p class="card-text">Search experience for find and purchase virtual phone numbers.</p>
+          <p class="card-text">Case study coming soon.</p>
           <!-- <img src="./img/sample.png" alt="" class="card-image"> -->
           <div class="card-image" style="background-image: url(./img/sample.png);"></div>
         </a>
-        <a href="#" class="card">
-          <h3 class="card-title">XML SuperDebugger</h3>
-          <p class="card-text">Search experience for find and purchase virtual.</p>
+        <a href="./html/search.html" class="card">
+          <h3 class="card-title">Numbers Search</h3>
+          <p class="card-text">A search experience for find and purchase virtual phone numbers.</p>
           <!-- <img src="./img/sample.png" alt="" class="card-image"> -->
           <div class="card-image" style="background-image: url(./img/sample.png);"></div>
         </a>
-        <a href="#" class="card">
-          <h3 class="card-title">XML SuperDebugger</h3>
-          <p class="card-text">Search experience for find and purchase virtual.</p>
+        <a href="./html/authy" class="card">
+          <h3 class="card-title">Authy</h3>
+          <p class="card-text">A consumer Two-Factor Authentication app for iOS, Android, and Desktop.</p>
           <!-- <img src="./img/sample.png" alt="" class="card-image"> -->
           <div class="card-image" style="background-image: url(./img/sample.png);"></div>
         </a>
-        <a href="#" class="card">
-          <h3 class="card-title">XML SuperDebugger</h3>
-          <p class="card-text">Search experience for find and purchase virtual phone numbers.</p>
+        <a href="./html/design-system" class="card">
+          <h3 class="card-title">Mission Control</h3>
+          <p class="card-text">Fixing a fragmented Design System.</p>
+          <!-- <img src="./img/sample.png" alt="" class="card-image"> -->
+          <div class="card-image" style="background-image: url(./img/sample.png);"></div>
+        </a>
+        <a href="./html/trust-hub" class="card">
+          <h3 class="card-title">Twilio TrustHub</h3>
+          <p class="card-text">Enabling customers to create identity profiles to unlock communication services.</p>
+          <!-- <img src="./img/sample.png" alt="" class="card-image"> -->
+          <div class="card-image" style="background-image: url(./img/sample.png);"></div>
+        </a>
+        <a href="./html/paste" class="card">
+          <h3 class="card-title">Paste</h3>
+          <p class="card-text">A Design System to build inclusive, delightful Twilio customer experiences.</p>
           <!-- <img src="./img/sample.png" alt="" class="card-image"> -->
           <div class="card-image" style="background-image: url(./img/sample.png);"></div>
         </a>
@@ -65,22 +78,24 @@
     <!-- Footer -->
 
     <footer>
-      <div class="footer-content">
+      <div class="footer-content" name="footer-content">
         <p class="contact-text">Get in touch for a virtual ☕</p>
         <div class="email">
           <input id="copy" type="text" value="cveigt@gmail.com" readonly>
-          <button id="btn" data-clipboard-target=#copy></button>
+          <button id="btn" data-clipboard-target=#copy onclick="copiedToClipboard()"></button>
         </div>
+        <p class="copied"></p>
+        <!-- <p class="copied animate__animated animate__fadeOut animate__delay-1s"></p> -->
         <!-- <div class="email">
           <span class="email-text">cveigt@gmail.com</span>
           <div class="copy-icon"></div>
         </div> -->
         <ul class="social-media">
-          <li><a class="social-media-link" href="#">Twitter</a></li>
-          <li><a class="social-media-link" href="#">GitHub</a></li>
-          <li><a class="social-media-link" href="#">LinkedIn</a></li>
-          <li><a class="social-media-link" href="#">Figma</a></li>
-          <li><a class="social-media-link" href="#">Dribbble</a></li>
+          <li><a class="social-media-link" href="https://twitter.com/chrisveigt" target="_blank">Twitter</a></li>
+          <li><a class="social-media-link" href="https://github.com/cveigt" target="_blank">GitHub</a></li>
+          <li><a class="social-media-link" href="https://www.linkedin.com/in/christianveigt/" target="_blank">LinkedIn</a></li>
+          <li><a class="social-media-link" href="https://www.figma.com/@chriss" target="_blank">Figma</a></li>
+          <li><a class="social-media-link" href="https://dribbble.com/chrisveigt" target="_blank">Dribbble</a></li>
         </ul>
       </div>
     </footer>
@@ -102,6 +117,13 @@
     </script> -->
     <script>
       let clipBoard1 = new ClipboardJS('#btn');
+    </script>
+
+    <!-- Copied to Clipboard transition -->
+    <script>
+      function copiedToClipboard() {
+        document.querySelector(".copied").innerHTML = "Copied to clipboard";
+      }
     </script>
   </body>
 </html>
