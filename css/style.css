@@ -41,7 +41,13 @@ header {
     color: #343434;
     text-decoration: none;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    background: #F3F3F3;
+    border-radius: 6px;
 }
 
 /* Presentation section */
@@ -101,13 +107,13 @@ header {
 }
 
 .card-title {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     color: #343434;
     margin-bottom: 0.8rem;
 }
 
 .card-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.7rem;
     color: #5e5e5e;
     margin-bottom: 2rem;
@@ -122,4 +128,106 @@ header {
     background-size: cover;
     flex: 480px;
     background-position: center;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 16vh;
+    margin-bottom: 8vh;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-text {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #343434;
+}
+
+.email {
+    background: #F3F3F3;
+    display: flex;
+    padding: 12px 20px 14px 20px;
+    border-radius: 6px;
+    align-items: center;
+    margin: 4vh;
+}
+
+/* .email-text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.15rem;
+}
+
+.copy-icon {
+    background-image: url('../img/icon-copy-2.svg');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    opacity: 0.4;
+} */
+
+input {
+    border: none;
+    background: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.15rem;
+    width: 190px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#btn {
+    background-image: url('../img/icon-copy-2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    opacity: 0.4;
+    border: none;
+}
+
+#btn:hover {
+    opacity: 1;
+}
+
+#btn:focus {
+    outline: none;
+}
+
+.copy-icon:hover {
+    opacity: 1;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 28px;
+    margin-top: 14vh;
+}
+
+.social-media-link {
+    text-decoration: none;
+    padding: 10px;
+    color: #343434;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.social-media-link:hover {
+    background: #F3F3F3;
+    border-radius: 6px;
 }
