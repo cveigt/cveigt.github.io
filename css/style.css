@@ -90,6 +90,7 @@ header {
     width: 80%;
     margin: auto;
     justify-content: center;
+    margin-bottom: 20vh;
 }
 
 .card{
@@ -97,15 +98,20 @@ header {
     border-radius: 24px;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     /* background-image: url('../img/sample.png');
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 540px;
     min-width: 540px; */
     width: 540px;
+    height: 720px;
     min-width: 440px;
     text-decoration: none;
     padding: 44px 48px 0 48px;
+    border: 1px solid #F7F8F9;
 }
 
 .card-title {
@@ -123,14 +129,14 @@ header {
 .content {
     display: flex;
     flex-direction: column;
-}
+/* }
 .card-image {
     /* background-image: url('../img/sample.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     flex: 480px;
     background-position: center;
-}
+} */
 
 /* Footer */
 
@@ -138,8 +144,8 @@ footer {
     display: flex;
     width: 80%;
     margin: auto;
-    margin-top: 16vh;
-    margin-bottom: 8vh;
+    /* margin-top: 16vh;
+    margin-bottom: 8vh; */
 }
 
 .footer-content {
@@ -222,6 +228,7 @@ input:focus {
     list-style: none;
     gap: 28px;
     margin-top: 14vh;
+    margin-bottom: 8vh;
 }
 
 .social-media-link {
