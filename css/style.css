@@ -81,6 +81,11 @@ header {
     line-height: 1.9rem;
 }
 
+.company-link {
+    text-decoration: none;
+    color: #3279ED;
+}
+
 /* Project thumbnails */
 
 .cards {
