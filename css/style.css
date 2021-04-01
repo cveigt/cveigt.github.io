@@ -86,6 +86,35 @@ header {
     color: #3279ED;
 }
 
+.banner {
+    background: #F2F3F8 ;
+    border-radius: 6px;
+    margin-top: 48px;
+    display: flex;
+    padding: 4px;
+    align-items: center;
+}
+
+.banner-tag {
+    background: #D7E3F8;
+    border-radius: 5px;
+    padding: 8px;
+    /* align-self: center; */
+    color: #4285F4;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.banner-link {
+    color: #1E5ABD;
+    margin: 0 16px;
+}
+
+.banner-link:hover {
+    text-decoration: none;
+}
+
+
 /* Project thumbnails */
 
 .cards {
